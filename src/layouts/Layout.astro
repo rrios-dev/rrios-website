@@ -1,0 +1,70 @@
+---
+import Footer from "@/components/footer.astro";
+import Header from "@/components/header.astro";
+import "normalize.css";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
+<style is:global lang="scss">
+  :root {
+    --bg: #ffffff;
+    --text: #000000;
+    --font-size: 16px;
+    --bp-xs: 0;
+    --bp-sm: 576px;
+    --bp-md: 768px;
+    --bp-lg: 992px;
+    --bp-xl: 1200px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --text: #ffffff;
+    }
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: var(--font-size);
+    height: 100%;
+  }
+  body {
+    max-width: var(--bp-xl);
+    margin: 0 auto;
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  a {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  ::selection {
+    background-color: var(--text);
+    color: var(--bg);
+  }
+</style>

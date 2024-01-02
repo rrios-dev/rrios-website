@@ -1,0 +1,19 @@
+{
+  "name": "far-flare",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.4",
+    "astro": "^4.0.8",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.69.6",
+    "typescript": "^5.3.3"
+  }
+}

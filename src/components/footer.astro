@@ -1,0 +1,63 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <ul class="social">
+    <a target="_blank" href="https://www.facebook.com/"><li>Github</li></a>
+    <a target="_blank" href="https://www.facebook.com/"><li>Twitter</li></a>
+    <a target="_blank" href="https://www.facebook.com/"><li>Linkedin</li></a>
+    <a target="_blank" href="https://www.facebook.com/"><li>Email</li></a>
+  </ul>
+  <p class="year">
+    Roberto Ríos, {year}
+  </p>
+  <ul class="langs">
+    <a href="/es">es</a>
+    <a href="/en">en</a>
+  </ul>
+</footer>
+
+<style scoped lang="scss">
+  footer {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p.year {
+    font-size: 0.8rem;
+    font-weight: 100;
+    display: none;
+  }
+
+  @media (min-width: 720px) {
+    p.year {
+      display: block;
+    }
+  }
+
+  @media (min-width: 1240px) {
+    footer {
+      padding: 0.5rem 0;
+    }
+  }
+
+  ul.social {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul.langs {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+</style>
