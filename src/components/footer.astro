@@ -1,22 +1,43 @@
 ---
+import { Icon } from "astro-icon/components";
+
 const year = new Date().getFullYear();
 ---
 
 <footer>
   <ul class="social">
-    <a target="_blank" href="https://github.com/deveahub"><li>Github</li></a>
-    <a target="_blank" href="https://twitter.com/rriosdev"><li>Twitter</li></a>
-    <a target="_blank" href="https://www.linkedin.com/in/rriosper/"
-      ><li>Linkedin</li></a
-    >
-    <a href="mailto:roberto@deveahub.com"><li>Email</li></a>
+    <li>
+      <a
+        title="Go to Github"
+        target="_blank"
+        href="https://github.com/deveahub"
+      >
+        <Icon name="github" />
+      </a>
+    </li>
+    <li>
+      <a
+        title="Go to Twitter"
+        target="_blank"
+        href="https://twitter.com/rriosdev"
+      >
+        <Icon name="twitter" /></a
+      >
+    </li>
+    <li>
+      <a
+        title="Go to Linkedin"
+        target="_blank"
+        href="https://www.linkedin.com/in/rriosper/"><Icon name="linkedin" /></a
+      >
+    </li>
   </ul>
   <p class="year">
     Roberto Ríos, {year}
   </p>
   <ul class="langs">
-    <a href={Astro.url.pathname.replace(/\/es|\/en/, "/es")}>es</a>
-    <a href={Astro.url.pathname.replace(/\/es|\/en/, "/en")}>en</a>
+    <li><a href={Astro.url.pathname.replace(/\/es|\/en/, "/es")}>es</a></li>
+    <li><a href={Astro.url.pathname.replace(/\/es|\/en/, "/en")}>en</a></li>
   </ul>
 </footer>
 
@@ -27,7 +48,7 @@ const year = new Date().getFullYear();
     background-color: var(--bg-opacity);
     backdrop-filter: blur(11px);
     display: flex;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -47,16 +68,26 @@ const year = new Date().getFullYear();
 
   @media (min-width: 1240px) {
     footer {
-      padding: 0.5rem 0;
+      padding: 1rem 0;
     }
   }
 
   ul.social {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
+
+    a {
+      svg {
+        width: 1.2rem;
+        height: 1.2rem;
+        color: var(--text);
+      }
+    }
   }
 
   ul.langs {

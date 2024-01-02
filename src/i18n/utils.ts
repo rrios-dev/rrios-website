@@ -12,7 +12,5 @@ export function getURLWithLang(url: string, currentURL: URL) {
   const currentLang = getLangFromUrl(currentURL);
   const newURL = new URL(url, currentURL.origin);
 
-  newURL.pathname = `/${currentLang}${newURL.pathname}`;
-
-  return newURL;
+  return `/${currentLang}${newURL.pathname}`;
 }

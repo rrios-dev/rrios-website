@@ -35,10 +35,12 @@ const rootHref = getURLWithLang("/", Astro.url);
     background-color: var(--bg-opacity);
     backdrop-filter: blur(11px);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 1rem 0;
     align-items: center;
     z-index: 1;
+    gap: 0.5rem;
   }
 
   @media (min-width: 1240px) {
@@ -61,6 +63,7 @@ const rootHref = getURLWithLang("/", Astro.url);
     display: flex;
     list-style-type: none;
     gap: 2rem;
+    padding: 0;
   }
 
   ul.menu a {
