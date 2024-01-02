@@ -64,5 +64,14 @@
       "My trajectory is not just a path I have chosen; it's a map I am drawing. With every step, with every project, with every interaction, I define a route that goes beyond codes and algorithms. It's a journey towards the future, guided by passion, fueled by curiosity, and committed to excellence.",
       "If you feel called to explore new horizons and turn the imaginable into reality, I invite you to join me on this exciting journey. Your future, our technology, and the world await us."
     ]
-  }
+  },
+  "meta": {
+    "title": "Roberto Ríos - Software Developer",
+    "description": "Hello! I'm Roberto Ríos, a passionate software developer with experience in Frontend, Backend, and emerging technologies. Explore my trajectory and projects.",
+    "keywords": "software developer, Frontend, Backend, technology, projects, trajectory, emerging technologies",
+    "ogTitle": "Roberto Ríos - Software Developer",
+    "ogDescription": "Hello! I'm Roberto Ríos, a passionate software developer with experience in Frontend, Backend, and emerging technologies. Explore my trajectory and projects.",
+    "twitterTitle": "Roberto Ríos - Software Developer",
+    "twitterDescription": "Hello! I'm Roberto Ríos, a passionate software developer with experience in Frontend, Backend, and emerging technologies. Explore my trajectory and projects."
+}
 }

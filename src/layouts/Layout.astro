@@ -1,6 +1,7 @@
 ---
 import Footer from "@/components/footer.astro";
 import Header from "@/components/header.astro";
+import useTranslation from "@/i18n/use-translation";
 import "@fontsource/ubuntu";
 import { ViewTransitions } from "astro:transitions";
 import "normalize.css";
@@ -11,6 +12,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const t = useTranslation(Astro.url);
 const lng = getLangFromUrl(Astro.url);
 ---
 
@@ -18,10 +20,23 @@ const lng = getLangFromUrl(Astro.url);
 <html lang={lng}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={t("meta", "description")} />
+    <meta name="keywords" content={t("meta", "keywords")} />
+    <link rel="canonical" href="https://www.rrios.dev" />
+    <meta property="og:title" content={t("meta", "ogTitle")} />
+    <meta property="og:description" content={t("meta", "ogDescription")} />
+    <meta property="og:url" content="https://www.rrios.dev" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={t("meta", "twitterTitle")} />
+    <meta
+      name="twitter:description"
+      content={t("meta", "twitterDescription")}
+    />
+    <meta name="twitter:url" content="https://www.twitter.com/rriosdev" />
     <ViewTransitions />
     <title>{title}</title>
   </head>
@@ -34,7 +49,7 @@ const lng = getLangFromUrl(Astro.url);
     <style is:global lang="scss">
       :root {
         --bg: #ffffff;
-        --bg-opacity: rgba(255, 255, 255, 0.5);
+        --bg-opacity: rgba(255, 255, 255, 0.7);
         --text: #000000;
         --font-size: 16px;
         --font-family: "Ubuntu", sans-serif;
@@ -47,7 +62,7 @@ const lng = getLangFromUrl(Astro.url);
       @media (prefers-color-scheme: dark) {
         :root {
           --bg: #000000;
-          --bg-opacity: rgba(0, 0, 0, 0.5);
+          --bg-opacity: rgba(0, 0, 0, 0.7);
           --text: #ffffff;
         }
       }

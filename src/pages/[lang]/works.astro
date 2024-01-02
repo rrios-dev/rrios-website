@@ -80,29 +80,30 @@ export async function getStaticPaths() {
   </Section>
 
   <style scoped lang="scss">
-    @keyframes shadow {
+    @keyframes borderAnimation {
       0%,
       100% {
         text-shadow:
-          0 0 0 rgba(255, 0, 0, 0.5),
-          0 0 0 rgba(0, 0, 255, 0.5);
+          0 0 0 #007aff,
+          0 0 0 #007aff;
       }
       25% {
         text-shadow:
-          -3px 3px 5px rgba(255, 0, 0, 0.5),
-          3px -3px 5px rgba(0, 0, 255, 0.5);
+          0 0 0 #34c759,
+          0 0 0 #34c759;
       }
       50% {
         text-shadow:
-          -6px 6px 10px rgba(255, 0, 0, 0.5),
-          6px -6px 10px rgba(0, 0, 255, 0.5);
+          0 0 0 #ff2d55,
+          0 0 0 #ff2d55;
       }
       75% {
         text-shadow:
-          -3px 3px 5px rgba(255, 0, 0, 0.5),
-          3px -3px 5px rgba(0, 0, 255, 0.5);
+          0 0 0 #5856d6,
+          0 0 0 #5856d6;
       }
     }
+
     ul {
       display: flex;
       flex-direction: column;
@@ -117,8 +118,7 @@ export async function getStaticPaths() {
         line-height: 1.8rem;
 
         a {
-          font-weight: 700;
-          animation: shadow 2s infinite linear alternate;
+          animation: borderAnimation 4s infinite linear alternate;
         }
       }
     }
