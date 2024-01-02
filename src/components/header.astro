@@ -1,25 +1,44 @@
 ---
 import Circle from "@/components/circle.astro";
+import { getURLWithLang } from "@/i18n/utils";
+
+const links = ["works", "trajectory", "contact"].map((link) => {
+  return {
+    href: getURLWithLang("/" + link, Astro.url),
+    text: link,
+  };
+});
+
+const rootHref = getURLWithLang("/", Astro.url);
 ---
 
 <header>
-  <a class="logo" href="/">
+  <a class="logo" href={rootHref}>
     <Circle />
      rrios.dev
   </a>
   <ul class="menu">
-    <li><a href="/work">work</a></li>
-    <li><a href="/trajectory">trajectory</a></li>
-    <li><a href="/contact">contact</a></li>
+    {
+      links.map((link) => (
+        <li>
+          <a href={link.href}>{link.text}</a>
+        </li>
+      ))
+    }
   </ul>
 </header>
 
 <style scoped lang="scss">
   header {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-opacity);
+    backdrop-filter: blur(11px);
     display: flex;
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
+    z-index: 1;
   }
 
   @media (min-width: 1240px) {

@@ -1,0 +1,126 @@
+---
+import Section from "../../components/section.astro";
+import { Locale } from "../../i18n/constants";
+import useTranslation from "../../i18n/use-translation";
+import Layout from "../../layouts/Layout.astro";
+
+const t = useTranslation(Astro.url);
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: Locale.English } },
+    { params: { lang: Locale.Spanish } },
+  ];
+}
+---
+
+<Layout title="Welcome to Astro.">
+  <Section title={`${t("works", "title")} 👨🏻‍💻`}>
+    <ul>
+      <li><p>{t("works", "introduction")}</p></li>
+      <li>
+        <p>
+          ◦ <a target="_blank" href={t("works", "experiences.0.link")}
+            >{t("works", "experiences.0.title")}:</a
+          >
+          {t("works", "experiences.0.description")}
+        </p>
+      </li>
+      <li>
+        <p>
+          ◦ <a target="_blank" href={t("works", "experiences.1.link")}
+            >{t("works", "experiences.1.title")}:</a
+          >
+          {t("works", "experiences.1.description")}
+        </p>
+      </li>
+      <li>
+        <p>
+          ◦ <a target="_blank" href={t("works", "experiences.2.link")}
+            >{t("works", "experiences.2.title")}:</a
+          >
+          {t("works", "experiences.2.description")}
+        </p>
+      </li>
+      <li>
+        <p>
+          ◦ <a target="_blank" href={t("works", "experiences.3.link")}
+            >{t("works", "experiences.3.title")}:</a
+          >
+          {t("works", "experiences.3.description")}
+        </p>
+      </li>
+      <li>
+        <p>
+          ◦ <a target="_blank" href={t("works", "experiences.4.link")}
+            >{t("works", "experiences.4.title")}:</a
+          >
+          {t("works", "experiences.4.description")}
+        </p>
+      </li>
+      <li>
+        <p>
+          ◦ <a target="_blank" href={t("works", "experiences.5.link")}
+            >{t("works", "experiences.5.title")}:</a
+          >
+          {t("works", "experiences.5.description")}
+        </p>
+      </li>
+      <li>
+        <p>
+          ◦ <a target="_blank" href={t("works", "experiences.6.link")}
+            >{t("works", "experiences.6.title")}:</a
+          >
+          {t("works", "experiences.6.description")}
+        </p>
+      </li>
+      <li><p>{t("works", "results.0")}</p></li>
+      <li><p>{t("works", "results.1")}</p></li>
+    </ul>
+  </Section>
+
+  <style scoped lang="scss">
+    @keyframes shadow {
+      0%,
+      100% {
+        text-shadow:
+          0 0 0 rgba(255, 0, 0, 0.5),
+          0 0 0 rgba(0, 0, 255, 0.5);
+      }
+      25% {
+        text-shadow:
+          -3px 3px 5px rgba(255, 0, 0, 0.5),
+          3px -3px 5px rgba(0, 0, 255, 0.5);
+      }
+      50% {
+        text-shadow:
+          -6px 6px 10px rgba(255, 0, 0, 0.5),
+          6px -6px 10px rgba(0, 0, 255, 0.5);
+      }
+      75% {
+        text-shadow:
+          -3px 3px 5px rgba(255, 0, 0, 0.5),
+          3px -3px 5px rgba(0, 0, 255, 0.5);
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      padding: 0;
+      list-style-type: none;
+
+      li p {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 1.8rem;
+
+        a {
+          font-weight: 700;
+          animation: shadow 2s infinite linear alternate;
+        }
+      }
+    }
+  </style>
+</Layout>

@@ -1,0 +1,31 @@
+---
+import SectionList from "@/components/section-list.astro";
+import { LOCALE_STATIC_PATHS } from "@/i18n/constants";
+import Section from "../../components/section.astro";
+import useTranslation from "../../i18n/use-translation";
+import Layout from "../../layouts/Layout.astro";
+
+const t = useTranslation(Astro.url);
+
+export async function getStaticPaths() {
+  return LOCALE_STATIC_PATHS;
+}
+---
+
+<Layout title="Welcome to Astro.">
+  <Section title={`${t("trajectory", "title")} 🛣️`}>
+    <SectionList
+      items={[
+        t("trajectory", "paragraphs.0"),
+        t("trajectory", "paragraphs.1"),
+        t("trajectory", "paragraphs.2"),
+        t("trajectory", "paragraphs.3"),
+        t("trajectory", "paragraphs.4"),
+        t("trajectory", "paragraphs.5"),
+        t("trajectory", "paragraphs.6"),
+      ]}
+    />
+  </Section>
+</Layout>
+
+<style scoped lang="scss"></style>

@@ -1,70 +1,125 @@
 ---
 import Footer from "@/components/footer.astro";
 import Header from "@/components/header.astro";
+import "@fontsource/ubuntu";
+import { ViewTransitions } from "astro:transitions";
 import "normalize.css";
+import { getLangFromUrl } from "../i18n/utils";
 
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
+const lng = getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lng}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <ViewTransitions />
     <title>{title}</title>
   </head>
   <body>
     <Header />
-    <slot />
+    <main>
+      <slot />
+    </main>
     <Footer />
+    <style is:global lang="scss">
+      :root {
+        --bg: #ffffff;
+        --bg-opacity: rgba(255, 255, 255, 0.5);
+        --text: #000000;
+        --font-size: 16px;
+        --font-family: "Ubuntu", sans-serif;
+        --bp-xs: 0;
+        --bp-sm: 576px;
+        --bp-md: 768px;
+        --bp-lg: 992px;
+        --bp-xl: 1200px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --bg-opacity: rgba(0, 0, 0, 0.5);
+          --text: #ffffff;
+        }
+      }
+      html {
+        font-family: var(--font-family);
+        background-color: var(--bg);
+        color: var(--text);
+        font-size: var(--font-size);
+        height: 100%;
+      }
+
+      @keyframes scroll-animation {
+        from {
+          opacity: 0;
+          transform: translate(0, 10px) scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0) scale(1);
+        }
+      }
+      body {
+        max-width: var(--bp-xl);
+        margin: 0 auto;
+        display: grid;
+        height: 100%;
+        grid-template-rows: auto 1fr auto;
+      }
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & ul li {
+          animation-name: scroll-animation;
+          animation-timeline: view();
+          view-timeline-name: view();
+          view-timeline-axis: block;
+          animation-timeline: view();
+          animation-range: entry 85% cover 10%;
+          animation-fill-mode: both;
+        }
+      }
+
+      a {
+        color: var(--text);
+        text-decoration: none;
+        border-radius: 6px;
+
+        &:focus-visible {
+          outline: 2px solid var(--text);
+          outline-offset: 4px;
+        }
+      }
+
+      ::selection {
+        background-color: var(--text);
+        color: var(--bg);
+      }
+
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: var(--text);
+        border-radius: 3px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: var(--bg);
+      }
+    </style>
   </body>
 </html>
-<style is:global lang="scss">
-  :root {
-    --bg: #ffffff;
-    --text: #000000;
-    --font-size: 16px;
-    --bp-xs: 0;
-    --bp-sm: 576px;
-    --bp-md: 768px;
-    --bp-lg: 992px;
-    --bp-xl: 1200px;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #000000;
-      --text: #ffffff;
-    }
-  }
-  html {
-    font-family: system-ui, sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
-    font-size: var(--font-size);
-    height: 100%;
-  }
-  body {
-    max-width: var(--bp-xl);
-    margin: 0 auto;
-    display: grid;
-    height: 100%;
-    grid-template-rows: auto 1fr auto;
-  }
-
-  a {
-    color: var(--text);
-    text-decoration: none;
-  }
-
-  ::selection {
-    background-color: var(--text);
-    color: var(--bg);
-  }
-</style>

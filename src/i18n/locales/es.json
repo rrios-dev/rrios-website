@@ -1,0 +1,69 @@
+{
+    "home": {
+      "title": "Sobre Mí",
+      "paragraphs": [
+        "Saludos humano, mi nombre es Roberto Ríos, un apasionado por la tecnología que ha tenido el privilegio de trabajar en diversos ámbitos: Frontend, Backend, web3 en Ethereum y aplicaciones móviles iOS y Android. Mi stack tecnológico incluye tecnologías como React, GraphQL, Firebase y React Native, con las cuales construyo experiencias digitales sólidas y cautivadoras.",
+        "En el ámbito del Frontend, me especializo en crear interfaces accesibles y atractivas, junto con sistemas de diseño y animaciones efectivas. En Backend, mi enfoque está en la creación de arquitecturas eficientes y reutilizables que optimizan los recursos disponibles.",
+        "Además, como cofundador de DeveaHub, asesoro a aquellos que buscan transformar digitalmente sus proyectos. Me enorgullece llevar mis conocimientos a la mesa y colaborar en soluciones efectivas.",
+        "Mi verdadera pasión radica en explorar nuevas posibilidades tecnológicas y desafiar los límites convencionales. Si estás interesado en conectar o deseas conocer más sobre mi trabajo, no dudes en contactarme a través de mis redes sociales o correo electrónico. Juntos, podemos crear un impacto significativo en el mundo digital."
+      ]
+    },
+    "works": {
+      "title": "Mi Trabajo",
+      "introduction": "Durante mi carrera, he tenido la oportunidad de colaborar con varias empresas, aplicando una amplia gama de tecnologías en diferentes proyectos:",
+      "results": [
+        "La variedad de mis experiencias refleja una habilidad para adaptarme y contribuir en diferentes entornos, siempre enfocándome en entender las necesidades y encontrar soluciones efectivas.",
+        "Si buscas alguien con un enfoque práctico y una amplia gama de habilidades técnicas, estaré encantado de hablar contigo sobre cómo podemos trabajar juntos para cumplir los objetivos de tu empresa."
+      ],
+      "experiences": [
+        {
+          "title": "Sewan",
+          "description": "En la industria de las telecomunicaciones, contribuí en diversos proyectos, utilizando tecnologías como React, GraphQL y Redux. Desarrollé aplicaciones que mejoran la comunicación y ofrecen personalización en los servicios de telefonía y fibra óptica.",
+          "link": "https://www.sewan.es/"
+        },
+        {
+          "title": "Freepik",
+          "description": "Mi tiempo en Freepik fue dedicado a la modernización de la arquitectura, participando en la creación de micro-frontends con Next.js y ayudando en la transición desde sistemas legacy.",
+          "link": "https://www.freepik.com/"
+        },
+        {
+          "title": "Nexiona",
+          "description": "En Nexiona, trabajé en la parte frontal de aplicaciones IoT para parkings de vehículos, usando React, Redux y arquitecturas basadas en observables. Fue una experiencia enriquecedora en tecnologías emergentes.",
+          "link": "https://nexiona.com/"
+        },
+        {
+          "title": "BoB",
+          "description": "Mi rol en BoB fue diverso, abordando tanto el frontend como el backend. Desarrollé y mantuve características en React para la aplicación de pedidos, backoffice, y aplicaciones móviles Android e iOS.",
+          "link": "https://bob.io/"
+        },
+        {
+          "title": "ManoMano",
+          "description": "En ManoMano, estuve involucrado en el desarrollo de la parte de checkout y en la migración de un servicio legacy a NodeJS, aplicando buenas prácticas de programación y clean code.",
+          "link": "https://manomano.com/"
+        },
+        {
+          "title": "ISDIN",
+          "description": "En ISDIN, trabajé en la creación del sistema de diseño y en el desarrollo de APIs y servicios backend usando clean code estricto, participando en diferentes proyectos que fortalecieron la coherencia de diseño.",
+          "link": "https://isdin.com/"
+        },
+        {
+          "title": "Vinci",
+          "description": "Con Vinci, exploré el mundo de la tecnología blockchain, desarrollando en la parte frontal y trabajando con contratos en las redes de ETH y BSC en varios proyectos relacionados con el crowdfunding de artistas musicales.",
+          "link": "https://byvinci.io/"
+        }
+      ]
+    },
+    "trajectory":{
+      "title": "Mi Trayectoria",
+      "paragraphs": [
+        "La travesía de un desarrollador no es simplemente una carrera en tecnología; es una exploración apasionante que conecta el mundo digital con el latido de la humanidad. Mientras viajo por todo el globo, me encuentro en una búsqueda constante de innovación, conocimiento y comprensión profunda del impacto tecnológico en nuestras vidas.",
+        "DeveaHub es más que mi consultoría de desarrollo tecnológico; es un crisol donde la tecnología se fusiona con la visión y la ambición. En este lugar, no solo creamos soluciones; fomentamos ideas que cambian paradigmas y forjamos caminos que transforman sectores.",
+        "Mi compromiso con las comunidades de código abierto es un testimonio de mi creencia en la colaboración y la innovación compartida. Contribuir con conocimiento y valor a estas comunidades es un honor y una responsabilidad, un puente que une mentes brillantes en una misión conjunta.",
+        "En el horizonte, los campos de la inteligencia artificial y la tecnología blockchain se presentan como las nuevas fronteras, esperando ser exploradas y dominadas. Mi deseo de seguir formándome en estas áreas es más que una meta profesional; es una llamada al futuro, una invitación a ser parte de la próxima ola de innovación que definirá nuestra época.",
+        "La tecnología es un lienzo, y mi visión personal del mundo y su integración con la tecnología es la paleta con la que pinto. La riqueza de experiencias y conocimientos que he adquirido, y continúo enriqueciendo, no es solo un conjunto de habilidades, sino una filosofía de vida.",
+        "Mi trayectoria no es solo un camino que he escogido; es un mapa que estoy dibujando. Con cada paso, con cada proyecto, con cada interacción, defino una ruta que va más allá de los códigos y algoritmos. Es un viaje hacia el futuro, guiado por la pasión, alimentado por la curiosidad y comprometido con la excelencia.",
+        "Si te sientes llamado a explorar nuevos horizontes y a convertir lo imaginable en realidad, te invito a unirte a mí en esta emocionante travesía. Tu futuro, nuestra tecnología, y el mundo nos esperan."
+      ]
+    }
+  }
+  

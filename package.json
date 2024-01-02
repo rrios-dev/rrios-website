@@ -11,9 +11,19 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
+    "@fontsource-variable/fira-code": "^5.0.16",
+    "@fontsource-variable/manrope": "^5.0.18",
+    "@fontsource/fira-mono": "^5.0.8",
+    "@fontsource/fira-sans": "^5.0.18",
+    "@fontsource/titillium-web": "^5.0.18",
+    "@fontsource/ubuntu": "^5.0.8",
     "astro": "^4.0.8",
     "normalize.css": "^8.0.1",
+    "ramda": "^0.29.1",
     "sass": "^1.69.6",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/ramda": "^0.29.9"
   }
 }

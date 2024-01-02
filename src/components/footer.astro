@@ -4,22 +4,28 @@ const year = new Date().getFullYear();
 
 <footer>
   <ul class="social">
-    <a target="_blank" href="https://www.facebook.com/"><li>Github</li></a>
-    <a target="_blank" href="https://www.facebook.com/"><li>Twitter</li></a>
-    <a target="_blank" href="https://www.facebook.com/"><li>Linkedin</li></a>
-    <a target="_blank" href="https://www.facebook.com/"><li>Email</li></a>
+    <a target="_blank" href="https://github.com/deveahub"><li>Github</li></a>
+    <a target="_blank" href="https://twitter.com/rriosdev"><li>Twitter</li></a>
+    <a target="_blank" href="https://www.linkedin.com/in/rriosper/"
+      ><li>Linkedin</li></a
+    >
+    <a href="mailto:roberto@deveahub.com"><li>Email</li></a>
   </ul>
   <p class="year">
     Roberto Ríos, {year}
   </p>
   <ul class="langs">
-    <a href="/es">es</a>
-    <a href="/en">en</a>
+    <a href={Astro.url.pathname.replace(/\/es|\/en/, "/es")}>es</a>
+    <a href={Astro.url.pathname.replace(/\/es|\/en/, "/en")}>en</a>
   </ul>
 </footer>
 
 <style scoped lang="scss">
   footer {
+    bottom: 0;
+    position: sticky;
+    background-color: var(--bg-opacity);
+    backdrop-filter: blur(11px);
     display: flex;
     padding: 0.5rem;
     align-items: center;

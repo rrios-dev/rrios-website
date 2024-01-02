@@ -1,0 +1,68 @@
+{
+  "home": {
+    "title": "About Me",
+    "paragraphs": [
+      "Greetings human, my name is Roberto Ríos, a technology enthusiast who has had the privilege of working in various fields: Frontend, Backend, web3 on Ethereum, and iOS and Android mobile applications. My technological stack includes technologies like React, GraphQL, Firebase, and React Native, with which I build robust and captivating digital experiences.",
+      "In the Frontend domain, I specialize in creating accessible and appealing interfaces, along with effective design systems and animations. In Backend, my focus lies in building efficient and reusable architectures that optimize available resources.",
+      "Furthermore, as a co-founder of DeveaHub, I provide guidance to those seeking to digitally transform their projects. I take pride in bringing my knowledge to the table and collaborating on effective solutions.",
+      "My true passion lies in exploring new technological possibilities and challenging conventional boundaries. If you're interested in connecting or learning more about my work, feel free to reach out to me through my social networks or email. Together, we can create a significant impact in the digital world."
+    ]
+  },
+  "works": {
+    "title": "My work",
+    "introduction": "Throughout my career, I have had the opportunity to collaborate with various companies, applying a wide range of technologies in different projects:",
+    "results": [
+      "The diversity of my experiences reflects an ability to adapt and contribute in different environments, always focusing on understanding needs and finding effective solutions.",
+      "If you're looking for someone with a practical approach and a broad range of technical skills, I would be delighted to discuss how we can work together to fulfill your company's goals."
+    ],
+    "experiences": [
+      {
+        "title": "Sewan",
+        "description": "In the telecommunications industry, I contributed to various projects using technologies like React, GraphQL, and Redux. I developed applications that enhance communication and provide customization in telephony and fiber optic services.",
+        "link": "https://www.sewan.es/"
+      },
+      {
+        "title": "Freepik",
+        "description": "My time at Freepik was dedicated to modernizing architecture, participating in the creation of micro-frontends with Next.js, and aiding in the transition from legacy systems.",
+        "link": "https://www.freepik.com/"
+      },
+      {
+        "title": "Nexiona",
+        "description": "At Nexiona, I worked on the frontend of IoT applications for vehicle parking, using React, Redux, and observable-based architectures. It was an enriching experience in emerging technologies.",
+        "link": "https://nexiona.com/"
+      },
+      {
+        "title": "BoB",
+        "description": "My role at BoB was diverse, covering both frontend and backend. I developed and maintained React features for order applications, back offices, and Android and iOS mobile applications.",
+        "link": "https://bob.io/"
+      },
+      {
+        "title": "ManoMano",
+        "description": "At ManoMano, I was involved in developing the checkout portion and migrating a legacy service to NodeJS, applying good programming practices and clean code.",
+        "link": "https://manomano.com/"
+      },
+      {
+        "title": "ISDIN",
+        "description": "At ISDIN, I worked on creating the design system and developing APIs and backend services using strict clean code principles, participating in different projects that strengthened design coherence.",
+        "link": "https://isdin.com/"
+      },
+      {
+        "title": "Vinci",
+        "description": "With Vinci, I explored the world of blockchain technology, developing on the frontend and working with contracts on ETH and BSC networks in various projects related to crowdfunding for musical artists.",
+        "link": "https://byvinci.io/"
+      }
+    ]
+  },
+  "trajectory":{
+    "title": "My trajectory",
+    "paragraphs": [
+      "A developer's journey is not merely a career in technology; it's an exciting exploration that connects the digital world with the heartbeat of humanity. As I travel across the globe, I am on a constant quest for innovation, knowledge, and a deep understanding of the technological impact on our lives.",
+      "DeveaHub is more than my technological development consultancy; it's a crucible where technology merges with vision and ambition. In this place, we not only create solutions; we foster paradigm-shifting ideas and forge paths that transform industries.",
+      "My commitment to open-source communities is a testament to my belief in collaboration and shared innovation. Contributing knowledge and value to these communities is an honor and a responsibility, a bridge that connects brilliant minds in a joint mission.",
+      "On the horizon, the fields of artificial intelligence and blockchain technology stand as new frontiers, waiting to be explored and mastered. My desire to continue learning in these areas is more than a professional goal; it's a call to the future, an invitation to be part of the next wave of innovation that will define our era.",
+      "Technology is a canvas, and my personal view of the world and its integration with technology is the palette with which I paint. The richness of experiences and knowledge I have acquired, and continue to enrich, is not just a set of skills, but a life philosophy.",
+      "My trajectory is not just a path I have chosen; it's a map I am drawing. With every step, with every project, with every interaction, I define a route that goes beyond codes and algorithms. It's a journey towards the future, guided by passion, fueled by curiosity, and committed to excellence.",
+      "If you feel called to explore new horizons and turn the imaginable into reality, I invite you to join me on this exciting journey. Your future, our technology, and the world await us."
+    ]
+  }
+}
