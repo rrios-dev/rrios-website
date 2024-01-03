@@ -1,4 +1,9 @@
 {
+  "menu": {
+    "works": "trabajos",
+    "trajectory": "trayectoria",
+    "contact": "contacto"
+  },
     "home": {
       "title": "Sobre Mí",
       "paragraphs": [

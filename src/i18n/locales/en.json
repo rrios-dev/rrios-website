@@ -1,4 +1,9 @@
 {
+  "menu": {
+    "works": "works",
+    "trajectory": "trajectory",
+    "contact": "contact"
+  },
   "home": {
     "title": "About Me",
     "paragraphs": [

@@ -1,4 +1,5 @@
 ---
+import useTranslation from "@/i18n/use-translation";
 import Circle from "../components/circle.astro";
 import { getURLWithLang } from "../i18n/utils";
 
@@ -10,6 +11,7 @@ const links = ["works", "trajectory", "contact"].map((link) => {
 });
 
 const rootHref = getURLWithLang("/", Astro.url);
+const t = useTranslation(Astro.url);
 ---
 
 <header>
@@ -21,7 +23,7 @@ const rootHref = getURLWithLang("/", Astro.url);
     {
       links.map((link) => (
         <li>
-          <a href={link.href}>{link.text}</a>
+          <a href={link.href}>{t("menu", link.text)}</a>
         </li>
       ))
     }
