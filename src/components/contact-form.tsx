@@ -69,38 +69,41 @@ const ContactForm = ({ translations }: ContactFormProps) => {
         return (
           <Form className="contact-form" noValidate>
             <h1>{translations.title} 👨🏻‍💻</h1>
-            <fieldset>
+            <div className="form-control">
               <Field
                 data-error={Boolean(errors.email) &&  hasSubmitted}
                 required
                 autoComplete="email"
                 name="email"
                 type="email"
+                aria-label={translations.email.placeholder}
                 placeholder={translations.email.placeholder}
               />
               {hasSubmitted && errors.email && <p className="error">{translations.email.error}</p>}
-            </fieldset>
-            <fieldset>
+            </div>
+            <div className="form-control">
               <Field
                 data-error={Boolean(errors.name) && hasSubmitted}
                 required
                 autoComplete="given-name"
                 name="name"
+                aria-label={translations.name.placeholder}
                 placeholder={translations.name.placeholder}
               />
               {hasSubmitted && errors.name && <p className="error">{translations.name.error}</p>}
-            </fieldset>
-            <fieldset>
+            </div>
+            <div className="form-control">
               <Field
                 data-error={Boolean(errors.content) && hasSubmitted}
                 required
                 as="textarea"
                 name="content"
                 placeholder={translations.content.placeholder}
+                aria-label={translations.content.placeholder}
                 rows={11}
               />
               {hasSubmitted && errors.content && <p className="error">{translations.content.error}</p>}
-            </fieldset>
+            </div>
             {error && <p className="error">{translations.error}</p>}
             <button disabled={isSubmitting} type="submit">{isSubmitting ? <span className="spinner" /> : translations.submit}</button>
           </Form>

@@ -5,15 +5,6 @@ form.contact-form {
     width: 100%;
     max-width: 40rem;
 
-    fieldset {
-        border: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
     input, textarea {
         padding: 1rem;
         background-color: var(--bg);
@@ -82,6 +73,15 @@ form.contact-form {
         margin: 0 auto;
         display: block;
     }
+}
+
+div.form-control {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 div.success-container {
