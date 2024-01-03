@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.3.4",
     "@astrojs/react": "^3.0.9",
+    "@astrojs/sitemap": "^3.0.4",
     "@fontsource-variable/fira-code": "^5.0.16",
     "@fontsource-variable/manrope": "^5.0.18",
     "@fontsource/fira-mono": "^5.0.8",
