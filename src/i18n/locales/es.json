@@ -64,6 +64,36 @@
         "Mi trayectoria no es solo un camino que he escogido; es un mapa que estoy dibujando. Con cada paso, con cada proyecto, con cada interacción, defino una ruta que va más allá de los códigos y algoritmos. Es un viaje hacia el futuro, guiado por la pasión, alimentado por la curiosidad y comprometido con la excelencia.",
         "Si te sientes llamado a explorar nuevos horizontes y a convertir lo imaginable en realidad, te invito a unirte a mí en esta emocionante travesía. Tu futuro, nuestra tecnología, y el mundo nos esperan."
       ]
-    }
+    },
+    "contact": {
+      "title": "Contáctame",
+      "introduction": "¡Hola!, Encantado de conocerte",
+      "form": {
+        "email": {
+          "placeholder": "Correo electrónico",
+          "error": "Por favor, introduce un correo electrónico válido"
+        },
+        "subject": {
+          "placeholder": "Asunto",
+          "error": "Por favor, introduce un asunto"
+        },
+        "content": {
+          "placeholder": "Ingresa tu mensaje aquí",
+          "error": "Por favor, describe tu mensaje"
+        },
+        "error": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
+        "success": "Mensaje enviado con éxito. ¡Gracias por contactarme!",
+        "submit": "Enviar"
+      }
+    },
+    "meta": {
+      "title": "Roberto Ríos - Desarrollador de Software",
+      "description": "¡Hola! Soy Roberto Ríos, un apasionado desarrollador de software con experiencia en Frontend, Backend y tecnologías emergentes. Explora mi trayectoria y proyectos.",
+      "keywords": "desarrollador de software, Frontend, Backend, tecnología, proyectos, trayectoria, tecnologías emergentes",
+      "ogTitle": "Roberto Ríos - Desarrollador de Software",
+      "ogDescription": "¡Hola! Soy Roberto Ríos, un apasionado desarrollador de software con experiencia en Frontend, Backend y tecnologías emergentes. Explora mi trayectoria y proyectos.",
+      "twitterTitle": "Roberto Ríos - Desarrollador de Software",
+      "twitterDescription": "¡Hola! Soy Roberto Ríos, un apasionado desarrollador de software con experiencia en Frontend, Backend y tecnologías emergentes. Explora mi trayectoria y proyectos."
+  }
   }
   

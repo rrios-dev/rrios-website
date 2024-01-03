@@ -65,6 +65,27 @@
       "If you feel called to explore new horizons and turn the imaginable into reality, I invite you to join me on this exciting journey. Your future, our technology, and the world await us."
     ]
   },
+  "contact": {
+    "title": "Contact me",
+    "introduction": "Hello!, Nice to meet you",
+    "form": {
+      "email": {
+        "placeholder": "Email",
+        "error": "Please enter a valid email"
+      },
+      "subject": {
+        "placeholder": "Subject",
+        "error": "Please enter a subject"
+      },
+      "content": {
+        "placeholder": "Enter your message here",
+        "error": "Please describe your message"
+      },
+      "error": "There was an error sending your message. Please try again later.",
+      "success": "Message received! We'll talk soon.",
+      "submit": "Send"
+    }
+  },
   "meta": {
     "title": "Roberto Ríos - Software Developer",
     "description": "Hello! I'm Roberto Ríos, a passionate software developer with experience in Frontend, Backend, and emerging technologies. Explore my trajectory and projects.",

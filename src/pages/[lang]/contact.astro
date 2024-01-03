@@ -1,6 +1,6 @@
 ---
+import ContactForm from "@/components/contact-form";
 import { LOCALE_STATIC_PATHS } from "@/i18n/constants";
-import Section from "../../components/section.astro";
 import useTranslation from "../../i18n/use-translation";
 import Layout from "../../layouts/Layout.astro";
 
@@ -11,18 +11,28 @@ export async function getStaticPaths() {
 }
 ---
 
-<Layout title="Welcome to Astro.">
-  <Section title={`${t("contact", "title")}`}>
-    <!-- <SectionList
-      items={[
-        // <p>Funciona</p>,
-        t("home", "paragraphs.0"),
-        t("home", "paragraphs.1"),
-        t("home", "paragraphs.2"),
-        t("home", "paragraphs.3"),
-      ]}
-    /> -->
-  </Section>
+<Layout title={`rrios | Software Developer | ${t("contact", "title")}`}>
+  <ContactForm
+    client:only="react"
+    translations={{
+      title: t("contact", "title"),
+      email: {
+        placeholder: t("contact", "form.email.placeholder"),
+        error: t("contact", "form.email.error"),
+      },
+      content: {
+        placeholder: t("contact", "form.content.placeholder"),
+        error: t("contact", "form.content.error"),
+      },
+      subject: {
+        placeholder: t("contact", "form.subject.placeholder"),
+        error: t("contact", "form.subject.error"),
+      },
+      error: t("contact", "form.error"),
+      success: t("contact", "form.success"),
+      submit: t("contact", "form.submit"),
+    }}
+  />
 </Layout>
 
 <style scoped lang="scss"></style>
