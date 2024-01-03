@@ -73,6 +73,7 @@ const ContactForm = ({ translations }: ContactFormProps) => {
               <Field
                 data-error={Boolean(errors.email) &&  hasSubmitted}
                 required
+                autoComplete="email"
                 name="email"
                 type="email"
                 placeholder={translations.email.placeholder}
@@ -83,6 +84,7 @@ const ContactForm = ({ translations }: ContactFormProps) => {
               <Field
                 data-error={Boolean(errors.name) && hasSubmitted}
                 required
+                autoComplete="given-name"
                 name="name"
                 placeholder={translations.name.placeholder}
               />
