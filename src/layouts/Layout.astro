@@ -49,7 +49,7 @@ const lng = getLangFromUrl(Astro.url);
     <style is:global lang="scss">
       :root {
         --bg: #ffffff;
-        --bg-opacity: rgba(255, 255, 255, 0.7);
+        --bg-opacity: rgba(255, 255, 255, 0.8);
         --error: #ff0000;
         --text: #000000;
         --font-size: 16px;
@@ -63,7 +63,7 @@ const lng = getLangFromUrl(Astro.url);
       @media (prefers-color-scheme: dark) {
         :root {
           --bg: #000000;
-          --bg-opacity: rgba(0, 0, 0, 0.7);
+          --bg-opacity: rgba(0, 0, 0, 0.8);
           --text: #ffffff;
         }
       }
@@ -91,6 +91,7 @@ const lng = getLangFromUrl(Astro.url);
         display: grid;
         height: 100%;
         grid-template-rows: auto 1fr auto;
+        gap: 1.5rem;
       }
       main {
         display: flex;
