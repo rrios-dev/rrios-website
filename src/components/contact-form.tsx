@@ -6,13 +6,13 @@ import "./contact-form.scss";
 
 const validationSchema = yup.object().shape({
   email: yup.string().email().required(),
-  subject: yup.string().required(),
+  name: yup.string().required(),
   content: yup.string().required(),
 });
 
 const INITIAL_VALUES: yup.InferType<typeof validationSchema> = {
   email: "",
-  subject: "",
+  name: "",
   content: "",
 };
 
@@ -23,7 +23,7 @@ interface ContactFormProps {
       placeholder: string;
       error: string;
     },
-    subject: {
+    name: {
       placeholder: string;
       error: string;
     },
@@ -81,12 +81,12 @@ const ContactForm = ({ translations }: ContactFormProps) => {
             </fieldset>
             <fieldset>
               <Field
-                data-error={Boolean(errors.subject) && hasSubmitted}
+                data-error={Boolean(errors.name) && hasSubmitted}
                 required
-                name="subject"
-                placeholder={translations.subject.placeholder}
+                name="name"
+                placeholder={translations.name.placeholder}
               />
-              {hasSubmitted && errors.subject && <p className="error">{translations.subject.error}</p>}
+              {hasSubmitted && errors.name && <p className="error">{translations.name.error}</p>}
             </fieldset>
             <fieldset>
               <Field

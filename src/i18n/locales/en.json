@@ -70,12 +70,12 @@
     "introduction": "Hello!, Nice to meet you",
     "form": {
       "email": {
-        "placeholder": "Email",
+        "placeholder": "Your email",
         "error": "Please enter a valid email"
       },
-      "subject": {
-        "placeholder": "Subject",
-        "error": "Please enter a subject"
+      "name": {
+        "placeholder": "Your name",
+        "error": "Please enter your name"
       },
       "content": {
         "placeholder": "Enter your message here",

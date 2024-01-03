@@ -15,7 +15,7 @@ export async function getStaticPaths() {
   <ContactForm
     client:only="react"
     translations={{
-      title: t("contact", "title"),
+      title: t("contact", "introduction"),
       email: {
         placeholder: t("contact", "form.email.placeholder"),
         error: t("contact", "form.email.error"),
@@ -24,9 +24,9 @@ export async function getStaticPaths() {
         placeholder: t("contact", "form.content.placeholder"),
         error: t("contact", "form.content.error"),
       },
-      subject: {
-        placeholder: t("contact", "form.subject.placeholder"),
-        error: t("contact", "form.subject.error"),
+      name: {
+        placeholder: t("contact", "form.name.placeholder"),
+        error: t("contact", "form.name.error"),
       },
       error: t("contact", "form.error"),
       success: t("contact", "form.success"),

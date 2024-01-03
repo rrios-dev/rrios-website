@@ -70,12 +70,12 @@
       "introduction": "¡Hola!, Encantado de conocerte",
       "form": {
         "email": {
-          "placeholder": "Correo electrónico",
+          "placeholder": "Tu correo electrónico",
           "error": "Por favor, introduce un correo electrónico válido"
         },
-        "subject": {
-          "placeholder": "Asunto",
-          "error": "Por favor, introduce un asunto"
+        "name": {
+          "placeholder": "Tu nombre",
+          "error": "Por favor, introduce tu nombre"
         },
         "content": {
           "placeholder": "Ingresa tu mensaje aquí",
