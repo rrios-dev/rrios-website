@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 
 <Layout title={`rrios | Software Developer | ${t("contact", "title")}`}>
   <ContactForm
-    client:only="react"
+    client:load
     translations={{
       title: t("contact", "introduction"),
       email: {
